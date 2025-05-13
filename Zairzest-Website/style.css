@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;500;600;700&display=swap');
+body {
+        margin: 0;
+        font-family: Outfit, sans-serif;
+        display: absolute;
+        flex-direction: column;
+        height: 100vh;
+        overflow-x: hidden;
+        
+    }
+    .top {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 11%;
+        background-color: #101010;
+        display: stretch;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        z-index: 1000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          border-bottom: 0.001px solid #a673c1;
+        }
+
+    .top .left {
+        color: white;
+        font-size: 18px;
+    }
+    .top .right {
+        color: white;
+        font-size: 18px;
+    }
+    .middle {
+        position: relative;
+        height:1626.24px;
+        background-color: #000000;
+        display: flex;
+        width: 100%;
+       
+
+    }
+    .bottom {
+        position: relative;
+        height:630px;
+        flex: 1; /* Automatically adjusts to fill the remaining space */
+        background-color: #121212;
+        display: flex;
+        
+    }
+
+    .zairza { 
+      position: absolute; /* Use absolute positioning */
+      left:39%; /* Move it to the horizontal center */
+      top: 4%; /* Keep the vertical position intact */
+      transform: translateX(-50%); /* Center it horizontally by shifting half its width */
+      font-size: 60px;
+      color: #ffffff;
+      text-align: center; /* Optional: Center-align the text itself */
+      white-space: nowrap;
+      font-weight: bold;
+      font-family: fantasy;
+      line-height: 1.5; /* Adjust spacing between lines */
+      letter-spacing: 2px;
+   
+  animation: slideInFromLeft 1.5s ease-out;
+    }
+
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(-50%);
+      opacity: 1;
+    }
+  }
+
+    
+    .zairza:hover {
+      color: #ffffff;
+      text-shadow: 0 0 20px #51236a, 0 0 30px #2f2835, 0 0 40px #fc05c7, 0 0 50px #bf77fe;
+      transition: color 03s ease, text-shadow 1s ease;
+text-shadow: 0 0 20px #51236a, 0 0 30px #2f2835, 0 0 40px #fc05c7, 0 0 50px #bf77fe;
+transition: color 0.3s ease, text-shadow 0.8s ease;
+    }
+    .zairza:not(:hover) {
+text-shadow: none;
+transition: text-shadow 1.6s ease-out;
+    }
+    .zairza2, .zairza3, .zairza4, .zairza5 {
+      position: absolute;
+      margin: 0 auto;
+      font-size: 18px;
+      left: 15.4%;
+      color: #c4bebe;
+      text-align: left;
+      white-space: normal;
+      font-weight: bold;
+      font-family: calibri;
+      line-height: 1.5;
+      letter-spacing: 2px;
+      transition: text-shadow 0.3s ease, opacity 0.3s ease;
+      animation: slideInFromBelow 1s ease-out forwards;
+    }
+
+    .zairza2 { top: 14%; animation-delay: 0.2s; }
+    .zairza3 { top: 20%; animation-delay: 0.4s; }
+    .zairza4 { top: 26%; animation-delay: 0.6s; }
+    .zairza5 { top: 32%; animation-delay: 0.8s; }
+
+    .zairza2:hover, .zairza3:hover, .zairza4:hover, .zairza5:hover {
+      text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+    }
+
+    @keyframes slideInFromBelow {
+      from {
+      transform: translateY(100%);
+      opacity: 0;
+      }
+      to {
+      transform: translateY(0);
+      opacity: 1;
+      }
+    }
+.zairzest
+{ font-family:Mohave;
+  font-weight: 300;
+  position:fixed;
+  font-size: 56px;
+  top:-33px;
+  left:30px;
+  background: linear-gradient(90deg, #4b0082, #2e0854, #191970, #0b3d91, #92d1f9, #19416b, #caefa0, #445795, #4b0082);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% auto;
+  animation: fluidFlow 5s linear infinite;
+ }
+
+@keyframes fluidFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+.want{
+  font-family: arial;
+  position:absolute;
+  font-size: 50px;
+  top:76px;
+  color: #ffffff;
+  left:8.6%;
+}
+.want2{
+  font-family: arial;
+  position:absolute;
+  font-size: 19px;
+  top:306px;
+  color: #ffffff;
+  left:8.6%;
+}
+.want3{
+  font-family: arial;
+  position:absolute;
+  font-size: 17px;
+  top:386px;
+  color: #ffffff;
+  left:8.6%;
+}
+.want4{
+  font-family: arial;
+  font-style: italic;
+  position:absolute;
+  font-size: 17px;
+  top:396px;
+  color: #ffffff;
+  left:81.6%;
+}
+.zn2{
+  font-family: arial;
+  font-weight:500;
+  font-size: 25px;
+  position:fixed;
+  right: 400px; 
+  top: 0.5px;
+  color: #f1e9e9;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+
+}
+.zn2:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #25b9b9, 0 0 20px #493a52, 0 0 30px #2e56e7;
+}
+.zn3{
+  font-family: arial;
+  font-weight:500;
+  font-size: 25px;
+  position:fixed;
+  right: 255px; 
+  top: -0.2px;
+  color: #f1e9e9;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}.zn3:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #59189f, 0 0 20px #af8dc4, 0 0 30px #2e56e7;
+}
+
+.zn4 {
+  font-family: arial;
+  font-weight: 500;
+  font-size: 25px;
+  position: fixed;
+  right: 47px;
+  top: -0.7px;
+  color: #f1e9e9;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.zn4:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #3d8888, 0 0 20px #95a8ed, 0 0 30px #2e56e7;
+}
+.logo {
+  position: absolute;
+  top: 306px;
+  right: 100px; /* Adjust the right position as needed */
+  width: 40px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px; /* Add some margin if needed */
+  transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+
+
+.logo:hover {
+  transform: scale(1.2); /* Scale up the logo on hover */
+}
+.logo2 {
+  position: absolute;
+  top: 306px;
+  right: 180px; /* Adjust the right position as needed */
+  width: 40px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px; /* Add some margin if needed */
+  transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+.logo2:hover {
+  transform: scale(1.2); /* Scale up the logo on hover */
+}
+.logo3 {
+  position: absolute;
+  top: 306px;
+  right: 260px; /* Adjust the right position as needed */
+  width: 40px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px; /* Add some margin if needed */
+  transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+.logo3:hover {
+  transform: scale(1.2); /* Scale up the logo on hover */
+}
+.logo4 {
+  position: absolute;
+  top: 306px;
+  right: 340px; /* Adjust the right position as needed */
+  width: 40px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px; /* Add some margin if needed */
+  transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+.logo4:hover {
+  transform: scale(1.2); /* Scale up the logo on hover */
+}
+.logo5 {
+  position: absolute;
+  top: 390px;
+  right: 100px; /* Adjust the right position as needed */
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px; /* Add some margin if needed */
+}
+.robot {
+  position: absolute;
+  top: 590px;
+  right: 60px; /* Adjust the right position as needed */
+  width: 600px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px; /* Add some margin if needed */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.robot:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.robot2 {
+  position: absolute;
+  top: 590px;
+  left: 15%; /* Adjust the right position as needed */
+  width: 600px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px; /* Add some margin if needed */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.robot2:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.robot4 {
+  position: absolute;
+  top: 990px;
+  right: 60px; /* Adjust the right position as needed */
+  width: 712px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px; /* Add some margin if needed */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.robot4:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.robot3 {
+  position: absolute;
+  top: 990px;
+  left: 15%; /* Adjust the right position as needed */
+  width: 600px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px; /* Add some margin if needed */
+  z-index: 1;
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.robot3:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+@keyframes scaleUp {
+  from {
+      transform: scale(0.5); /* Start at half the size */
+      opacity: 0; /* Start invisible */
+  }
+  to {
+      transform: scale(1); /* End at full size */
+      opacity: 1; /* Fully visible */
+  }
+}
+
+img {
+  animation: scaleUp 1.5s ease-out; /* Apply the animation to all images */
+  transform-origin: center; /* Scale from the center of the image */
+}@keyframes scaleUp {
+  from {
+      transform: scale(0.5); /* Start at half the size */
+      opacity: 0; /* Start invisible */
+  }
+  to {
+      transform: scale(1); /* End at full size */
+      opacity: 1; /* Fully visible */
+  }
+}
+
+img {
+  animation: scaleUp 1.5s ease-out; /* Apply the animation to all images */
+  transform-origin: center; /* Scale from the center of the image */
+}@keyframes scaleUp {
+  from {
+      transform: scale(0.5); /* Start at half the size */
+      opacity: 0; /* Start invisible */
+  }
+  to {
+      transform: scale(1); /* End at full size */
+      opacity: 1; /* Fully visible */
+  }
+}
+
+img {
+  animation: scaleUp 1.5s ease-out; /* Apply the animation to all images */
+  transform-origin: center; /* Scale from the center of the image */
+}@keyframes scaleUp {
+  from {
+      transform: scale(0.5); /* Start at half the size */
+      opacity: 0; /* Start invisible */
+  }
+  to {
+      transform: scale(1); /* End at full size */
+      opacity: 1; /* Fully visible */
+  }
+}
+
+img {
+  animation: scaleUp 1.5s ease-out; /* Apply the animation to all images */
+  transform-origin: center; 
+}
